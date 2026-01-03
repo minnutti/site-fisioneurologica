@@ -1,4 +1,5 @@
 //Track pro analytics
+/*
 (async function () {
   const page = window.location.pathname;
   const browser = navigator.userAgent;
@@ -33,6 +34,7 @@
     }),
   });
 })();
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
   // Funcionalidade do FAQ
