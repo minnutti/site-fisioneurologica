@@ -1,40 +1,42 @@
 //Track pro analytics
 (async function () {
-    const page = window.location.pathname;
-    const browser = navigator.userAgent;
-    const device = /mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
+  const page = window.location.pathname;
+  const browser = navigator.userAgent;
+  const device = /mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
 
-    // Coletar IP e dados de localização
-    let ip = "", country = "", city = "";
+  // Coletar IP e dados de localização
+  let ip = "",
+    country = "",
+    city = "";
 
-    try {
-        const res = await fetch("https://ipapi.co/json/");
-        const data = await res.json();
-        ip = data.ip;
-        country = data.country_name;
-        city = data.city;
-    } catch (e) {
-        console.log("Erro ao coletar IP/localização");
-    }
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    const data = await res.json();
+    ip = data.ip;
+    country = data.country_name;
+    city = data.city;
+  } catch (e) {
+    console.log("Erro ao coletar IP/localização");
+  }
 
-    // Envia para o servidor
-    fetch("/track.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-            ip,
-            country,
-            city,
-            device,
-            browser,
-            page
-        })
-    });
+  // Envia para o servidor
+  fetch("/track.php", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      ip,
+      country,
+      city,
+      device,
+      browser,
+      page,
+    }),
+  });
 })();
-
 
 document.addEventListener("DOMContentLoaded", function () {
   // Funcionalidade do FAQ
+  /*
   const faqItems = document.querySelectorAll(".faq-item");
 
   faqItems.forEach((item) => {
@@ -50,6 +52,25 @@ document.addEventListener("DOMContentLoaded", function () {
       item.classList.toggle("active");
     });
   });
+  */
+  ///////////////////////////////////////////////////////////////////
+
+  const dropdown = document.querySelector(".dropdown");
+  if (!dropdown) return;
+
+  const toggle = dropdown.querySelector(".dropdown-toggle");
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  document.addEventListener("click", (e) => {
+    dropdown.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+
   ///////////////////////////////////////////////////////////////////
 
   // Navegação suave para as seções (corrigida para esperar imagens carregarem)
@@ -83,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   ///////////////////////////////////////////////////////////////////
 
-// Menu mobile toggle
+  // Menu mobile toggle
   const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
   const nav = document.querySelector(".nav");
 
@@ -96,10 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.remove("active");
     }
   });
-///////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////
 
-// Botão "Agende sua consulta" - scroll para contato
-const btnAgendar = document.querySelector(".btn-agendar");
+  // Botão "Agende sua consulta" - scroll para contato
+  const btnAgendar = document.querySelector(".btn-agendar");
 
   if (btnAgendar) {
     btnAgendar.addEventListener("click", function () {
@@ -182,10 +203,11 @@ const btnAgendar = document.querySelector(".btn-agendar");
   window.addEventListener("scroll", updateButtonPosition);
   window.addEventListener("resize", updateButtonPosition);
   updateButtonPosition();
-///////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////
 
-// Slide no hero
-const slides = [
+  // Slide no hero
+  /*
+  const slides = [
     {
       image: "./images/image1.jpg",
       text: "Ambiente acolhedor, seguro e personalizado para você",
@@ -243,6 +265,10 @@ const slides = [
     });
   });
 
+  */
+
+  ////////////////////////////////////////////
+
   const modal = document.getElementById("info-modal");
   const modalText = document.getElementById("modal-text");
   const closeBtn = document.querySelector(".close-btn");
@@ -273,7 +299,6 @@ const slides = [
       modal.classList.add("hidden");
     }
   });
-
 });
 
 //header com efeito glass

@@ -60,7 +60,7 @@ video {
 /* Header */
 .header {
   background: var(--color-bg2);
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   position: sticky;
   top: 0;
   width: 100%;
@@ -73,7 +73,7 @@ video {
 /* Quando o JS adicionar .scrolled */
 .header.scrolled {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.55); /* tom branco + opacidade */
+  background: rgba(255, 255, 255, 0.75); /* tom branco + opacidade */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06); /* sombra suave premium */
 }
 
@@ -81,7 +81,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 32px;
+  /* padding: 22px 32px; */
   max-width: 1280px;
   margin: auto;
 }
@@ -136,13 +136,13 @@ video {
 /* Logo padrão visível por padrão */
 .logo-default {
   opacity: 1;
-  z-index: 2;
+  z-index: 20;
 }
 
 /* Logo scroll invisível por padrão */
 .logo-scroll {
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .nav ul {
@@ -151,6 +151,96 @@ video {
   gap: 2rem;
   align-items: center;
 }
+
+/* contorno nos itens */
+.nav ul li {
+  /* borda nos itens */
+  /* border: 1px solid blue; */
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  padding: 40px 15px;
+}
+
+ul .dropdown-menu li {
+  /* borda nos itens */
+  /* border: 1px solid red; */
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  padding: 0px 0px;
+}
+
+.nav-item:hover {
+    background: linear-gradient(#ffffff00,#0000000c);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Item pai */
+.dropdown {
+  display: none;
+  position: relative;
+}
+
+/* Botão */
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Submenu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 90%;
+  /* left: 100; */
+  min-width: 260px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 8px 12px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  /* display: none; */
+  flex-direction: column;
+  z-index: 999;
+}
+
+/* Itens do submenu */
+.dropdown-menu li a {
+    display: block;
+    /* padding: 10px 16px; */
+    color: #333;
+    white-space: nowrap;
+}
+
+/* .dropdown-menu li a:hover {
+    background: linear-gradient(#ffffff,#f3f3f3);
+} */
+
+/* Classe pra abrir e fechar menu */
+.dropdown.open .dropdown-menu{
+  display: flex;
+}
+
+
+
+/* Mostrar dropdown no hover e no foco (acessibilidade) */
+/* .dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: flex;
+} */
+/*-----------------------------------------------------------*/
+
+
 
 .nav a {
   position: relative;
@@ -174,7 +264,7 @@ video {
 }
 
 /* Linha animada ao hover */
-.nav a::after {
+.nav .dropdown-menu a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -185,7 +275,7 @@ video {
   transition: width 0.3s ease;
 }
 
-.nav a:hover::after {
+.nav .dropdown-menu a:hover::after {
   width: 100%;
 }
 
@@ -225,12 +315,17 @@ video {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 600px;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(255, 250, 235, 0.8),
     rgba(250, 250, 250, 0.6)
+  ); */
+  background: linear-gradient(
+    200deg, 
+    rgba(195, 248, 255, 1),
+    rgba(228, 227, 255, 1)
   );
   display: flex;
   align-items: center;
@@ -320,7 +415,7 @@ video {
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 6rem;
   margin-top: 2rem;
 }
 
@@ -341,7 +436,7 @@ video {
 .card h3 {
   font-size: 1.3rem;
   color: var(--color-destaques);
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   text-align: center;
 }
 
@@ -509,6 +604,12 @@ a.btn-agendar {
   text-decoration: none;
   width: fit-content;
   margin: 0 auto;
+}
+
+#depoimentos {
+  border: 1px solid red;
+  margin: 0 30px;
+  margin-bottom: 30px;
 }
 
 /* Perguntas Frequentes Section */
