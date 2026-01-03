@@ -269,6 +269,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ////////////////////////////////////////////
 
+  // Alteração do modal de descrição
+
+  /*
   const modal = document.getElementById("info-modal");
   const modalText = document.getElementById("modal-text");
   const closeBtn = document.querySelector(".close-btn");
@@ -301,6 +304,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+*/
+
+
 //header com efeito glass
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
@@ -310,3 +316,4 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+})
