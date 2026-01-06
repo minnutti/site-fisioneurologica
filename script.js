@@ -1,41 +1,4 @@
-//Track pro analytics
-/*
-(async function () {
-  const page = window.location.pathname;
-  const browser = navigator.userAgent;
-  const device = /mobile/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
-
-  // Coletar IP e dados de localização
-  let ip = "",
-    country = "",
-    city = "";
-
-  try {
-    const res = await fetch("https://ipapi.co/json/");
-    const data = await res.json();
-    ip = data.ip;
-    country = data.country_name;
-    city = data.city;
-  } catch (e) {
-    console.log("Erro ao coletar IP/localização");
-  }
-
-  // Envia para o servidor
-  fetch("/track.php", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({
-      ip,
-      country,
-      city,
-      device,
-      browser,
-      page,
-    }),
-  });
-})();
-*/
-
+//a
 document.addEventListener("DOMContentLoaded", function () {
   // Funcionalidade do FAQ
   /*
