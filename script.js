@@ -1,4 +1,3 @@
-//a
 document.addEventListener("DOMContentLoaded", function () {
   // Funcionalidade do FAQ
   /*
