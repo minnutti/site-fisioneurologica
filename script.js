@@ -1,43 +1,7 @@
+//
 document.addEventListener("DOMContentLoaded", function () {
-  // Funcionalidade do FAQ
-  /*
-  const faqItems = document.querySelectorAll(".faq-item");
-
-  faqItems.forEach((item) => {
-    const question = item.querySelector(".faq-question");
-
-    question.addEventListener("click", function () {
-      faqItems.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove("active");
-        }
-      });
-
-      item.classList.toggle("active");
-    });
-  });
-  */
-  ///////////////////////////////////////////////////////////////////
-
-  const dropdown = document.querySelector(".dropdown");
-  if (!dropdown) return;
-
-  const toggle = dropdown.querySelector(".dropdown-toggle");
-
-  toggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    const isOpen = dropdown.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", isOpen);
-  });
-
-  document.addEventListener("click", (e) => {
-    dropdown.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
-  });
-
-  ///////////////////////////////////////////////////////////////////
-
-  // Navegação suave para as seções (corrigida para esperar imagens carregarem)
+  
+  //Scroll suave quando clica no item da nav bar
   const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 
   navLinks.forEach((link) => {
