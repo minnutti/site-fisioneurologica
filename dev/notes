@@ -1,0 +1,14 @@
+Corrigir o dropdown, alinhando a seta embaixo do escrito, deixando na seguinte formatação:
+Condições Neurológicas
+      Atendidas
+          V
+
+E quando clicar, a seta girar 180 ^ e aparecer a lista com smooth, atrás da barra
+
+---
+Aplicar o dropdown do W3 mas ao inves de div, usar ul e li
+
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click
+
