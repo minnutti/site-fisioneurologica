@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://minnutti.github.io/site-mariana/sitemap.xml
+Sitemap: https://minnutti.github.io/site-fisioneurologica/sitemap.xml
+
