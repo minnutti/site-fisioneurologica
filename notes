@@ -1,15 +1,14 @@
-1. Meu crp 06/89408. Gostaria que vc colocasse um ícone de direcionamento para o Instagram @psi.marianaborralho
-Também não colocamos e-mail. psimarianaborralho@gmail.com
+Corrigir o dropdown, alinhando a seta embaixo do escrito, deixando na seguinte formatação:
+Condições Neurológicas
+      Atendidas
+          V
 
-1. No espaço de início no tópico 3, em vez de cuidando bem de quem amamos, trocar para orientação parental e familiar ---------------OK
+E quando clicar, a seta girar 180 ^ e aparecer a lista com smooth, atrás da barra
 
-2. Vamos mudar a ordem dos itens? Assim: ---------------OK
-- início
-- a psicóloga 
-- serviços
-      - terapia virtual
-     - serviços
-- perguntas frequentes
+---
+Aplicar o dropdown do W3 mas ao inves de div, usar ul e li
 
+https://www.w3schools.com/howto/howto_js_dropdown.asp
 
-Precisamos também alinhar algumas coisas no texto das perguntas frequentes, mas essa parte eu te passo depois
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar_click
+

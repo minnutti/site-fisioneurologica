@@ -1,6 +1,5 @@
 //
 document.addEventListener("DOMContentLoaded", function () {
-  
   //Scroll suave quando clica no item da nav bar
   const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 
@@ -30,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".nav").classList.remove("active");
     });
   });
-  ///////////////////////////////////////////////////////////////////
 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Menu mobile toggle
   const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
   const nav = document.querySelector(".nav");
@@ -45,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.remove("active");
     }
   });
-  ///////////////////////////////////////////////////////////////////
 
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Botão "Agende sua consulta" - scroll para contato
   const btnAgendar = document.querySelector(".btn-agendar");
 
@@ -58,8 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-  ///////////////////////////////////////////////////////////////////
-
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////////
   // Animação de entrada dos cards
   const observerOptions = {
     threshold: 0.1,
@@ -131,117 +129,39 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateButtonPosition);
   window.addEventListener("resize", updateButtonPosition);
   updateButtonPosition();
-  ///////////////////////////////////////////////////////////////////
 
-  // Slide no hero
-  /*
-  const slides = [
-    {
-      image: "./images/image1.jpg",
-      text: "Ambiente acolhedor, seguro e personalizado para você",
-      buttonLink: "https://wa.me/5513991110945",
-    },
-    {
-      image: "./images/image2.jpg",
-      text: "Acompanhamento Psicológico Individual",
-      buttonLink: "https://wa.me/5513991110945",
-    },
-    {
-      image: "./images/image3.jpg",
-      text: "Orientação Parental e Familiar",
-      buttonLink: "https://wa.me/5513991110945",
-    },
-  ];
+  //////////////////////////////////////////////////////////////////////////////
 
-  const heroImg = document.querySelector(".hero-image img");
-  const heroText = document.querySelector(".hero-content h1");
-  const heroBtn = document.querySelector(".hero-btn");
-
-  let currentSlide = 0;
-  let lastInteraction = Date.now();
-
-  function showSlide(index) {
-    const { image, text, buttonLink } = slides[index];
-    heroImg.style.opacity = 0;
-    heroText.style.opacity = 0;
-
-    setTimeout(() => {
-      heroImg.src = image;
-      heroText.textContent = text;
-      heroBtn.onclick = () => {
-        window.location.href = buttonLink;
-      };
-
-      heroImg.style.opacity = 1;
-      heroText.style.opacity = 1;
-    }, 500);
-  }
-
-  showSlide(currentSlide);
-
-  setInterval(() => {
-    const now = Date.now();
-    if (now - lastInteraction > 3000) {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-  }, 5000);
-
-  ["mousemove", "scroll", "keydown", "click"].forEach((event) => {
-    window.addEventListener(event, () => {
-      lastInteraction = Date.now();
-    });
-  });
-
-  */
-
-  ////////////////////////////////////////////
-
-  // Alteração do modal de descrição
-
-  /*
-  const modal = document.getElementById("info-modal");
-  const modalText = document.getElementById("modal-text");
-  const closeBtn = document.querySelector(".close-btn");
-
-  const contentMap = {
-    individual_exp:
-      "Indicada para adolescentes e adultos. A <strong>terapia individual</strong> oferece suporte aos indivíduos durante períodos difíceis, ensinando-os a lidar com <strong>questões emocionais, angústias, falta de motivação, baixa autoestima</strong> e <strong>desilusões</strong>. Seu objetivo central é proporcionar ao paciente uma nova forma de <strong>sentir e pensar</strong>, capacitando-o a superar as adversidades da sua vida.",
-    parental_exp:
-      "Orientação parental e familiar é um processo de <strong>apoio psicológico</strong> que ajuda pais, mães e responsáveis a lidarem com os desafios da <strong>criação dos filhos</strong>, promovendo relações mais saudáveis e estratégias educativas mais eficazes no ambiente familiar. Também oferece suporte no cuidado com <strong>idosos</strong> e <strong>pessoas com deficiência</strong>, auxiliando no enfrentamento das demandas do dia a dia com mais equilíbrio, fortalecendo vínculos e promovendo o bem-estar de todos.",
-    online_exp:
-      "O <strong>acompanhamento psicológico online</strong> é uma forma prática, segura e eficaz de cuidar da <strong>saúde mental</strong>. Ideal para quem busca flexibilidade de horários e conforto, essa modalidade permite que o paciente realize suas sessões de <strong>qualquer lugar</strong>, sem abrir mão da qualidade do atendimento. Realizado com <strong>ética, sigilo e profissionalismo</strong>, o processo terapêutico online segue as diretrizes do Conselho Federal de Psicologia e oferece um espaço acolhedor para autoconhecimento, escuta qualificada e desenvolvimento emocional.",
-  };
-
-  document.querySelectorAll(".info-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const key = btn.getAttribute("data-info");
-      modalText.innerHTML = contentMap[key] || "Texto não encontrado.";
-      modal.classList.remove("hidden");
-    });
-  });
-
-  closeBtn.addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
+  //header com efeito glass
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 20) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
     }
   });
-});
-
-*/
 
 
-//header com efeito glass
-window.addEventListener("scroll", function () {
-  const header = document.querySelector(".header");
-  if (window.scrollY > 20) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
+  // Dropdown da navbar -- do Claude
+  const dropdownItem = document.querySelector(".has-dropdown");
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+  if (dropdownToggle) {
+    dropdownToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      const isOpen = dropdownItem.classList.toggle("active");
+      this.setAttribute("aria-expanded", isOpen);
+    });
+
+    document.addEventListener("click", function () {
+      dropdownItem.classList.remove("active");
+      dropdownToggle.setAttribute("aria-expanded", "false");
+    });
+
+    document.querySelector(".dropdown").addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
   }
+  //-------------------------------------------------
 });
-})

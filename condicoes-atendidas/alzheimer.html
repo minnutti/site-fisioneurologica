@@ -14,23 +14,17 @@
     <meta name="author" content="Cristiane Alegre">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta property="og:type" content="website">
+
     <meta property="og:title" content="Fisio Neurológica - Fisioterapia especializada">
     <meta property="og:description" content="Fisioterapia especializada em patologias neurológicas.">
-    <meta property="og:url" content="https://fisioneurologica.com.br">
     <meta property="og:image" content="https://fisioneurologica.com.br/assets/fisioneurologica-thumb.png">
-    <meta property="twitter:card" content="https://fisioneurologica.com.br/assets/fisioneurologica-thumb.png" />
-    <meta property="twitter:image" content="https://fisioneurologica.com.br/assets/fisioneurologica-thumb.png" />
-    <meta property="twitter:site" content="https://fisioneurologica.com.br" />
+    <meta property="og:url" content="https://fisioneurologica.com.br/">
+    <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-    <link rel="alternate icon" type="image/x-icon" href="../assets/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="alternate icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- SEO -->
     <script type="application/ld+json">
@@ -146,38 +140,33 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="#inicio">
-                    <img src="../assets/logo-fisioneurologica.svg" alt="Logotipo Fisioneurológica" class="logo-img logo-default" />
-                    <img src="../assets/logo-site-mobile2.svg" alt="Logotipo mobile Fisioneurológica" class="logo-img logo-scroll" />
+                <a href="/">
+                    <img src="/assets/logo-fisioneurologica.svg" alt="Logotipo Fisioneurológica" class="logo-img logo-default" />
+                    <img src="/assets/logo-site-mobile2.svg" alt="Logotipo mobile Fisioneurológica" class="logo-img logo-scroll" />
                 </a>
             </div>
-
-            <!-- AQUI VAI SER A NAV BAR -->
             <nav class="nav" role="navigation" aria-label="Menu principal">
-
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-
-                    <li class="has-dropdown">
-                        <button class="dropdown-toggle" aria-expanded="false">
-                            Especialidades <span class="chevron"></span>
+                <ul class="menu">
+                    <li class="nav-item"><a href="/">Início</a></li>
+                    <li class="nav-item">
+                        <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Condições Neurológicas Atendidas
+                            <!-- <br> -->
+                            <img src="/assets/dropdownicon.svg" alt="" class="faq-icon" />
                         </button>
-                        <div class="dropdown dropdown-menu">
-                            <a href="reabilitacao-avc.html">Reabilitação pós-AVC</a>
-                            <a href="parkinson.html">Parkinson</a>
-                            <a href="esclerose-multipla.html">Esclerose Múltipla</a>
-                            <a href="ela.html">ELA</a>
-                            <a href="distrofias.html">Distrofias Musculares</a>
-                        </div>
+
+                        <ul class="dropdown-menu dropdown">
+                            <li><a href="/condicoes-atendidas/avc.html">AVC(Acidente Vascular Cerebral)</a></li>
+                            <li><a href="/condicoes-atendidas/parkinson.html">Doença de Parkinson</a></li>
+                            <li><a href="/condicoes-atendidas/alzheimer.html">Alzheimer</a></li>
+                            <li><a href="/condicoes-atendidas/esclerose.html">Esclerose Múltipla</a></li>
+                            <li><a href="/condicoes-atendidas/neuropatias.html">Outras Neuropatias</a></li>
+                        </ul>
                     </li>
-
-                    <li><a href="#sobre">Sobre</a></li>
-
-                    <li><a href="#contato">Contato</a></li>
+                    <li class="nav-item"><a href="/#depoimentos">Depoimentos</a></li>
+                    <li><a href="https://wa.me/5513997879142" aria-label="Agende sua avaliaçao FisioNeurológica" rel="noopener noreferrer" class="btn-contato">Agende sua Avaliação</a></li>
                 </ul>
-
             </nav>
-
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -186,66 +175,36 @@
         </div>
     </header>
     <!-- Fim do header -->
-
     <main>
 
-        <!-- Hero Section -->
-        <section id="inicio" class="hero">
-            <div class="hero-slide">
-                <div class="hero-content">
-                    <h1>Clínica FisioNeurológica</h1>
-                    <button class="hero-btn">Agende sua consulta</button>
-                </div>
-                <!--
-                <div class="hero-image">
-                    <img src="" alt="Fisioterapia Neurológica" />
-                </div>
-                -->
-            </div>
-        </section>
+        <!-- Conheça a Psicóloga Section -->
+        <section id="fisioterapeuta" class="conheca-psicologa">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="image-container">
+                        <img src="/images/draCristianeAlegre.webp" alt="Dra. Cristiane Alegre - Fisioterapeuta">
+                    </div>
+                    <div class="text-content">
+                        <h2>Alzheimer</h2>
+                        <p>A Doença de Alzheimer é uma condição neurodegenerativa que afeta principalmente a memória, o raciocínio e outras funções cognitivas, podendo também gerar alterações motoras ao longo do tempo. À medida que a doença evolui, o paciente pode apresentar dificuldades de locomoção, perda de equilíbrio, redução da força muscular e maior risco de quedas.</p>
 
-        <!-- Quadradinhos de destaques -->
-        <div class="container">
-            <div class="cards-container">
-                <div class="card">
-                    <img src="../images/img3.webp" alt="Fisioterapia para idosos" loading="lazy">
-                    <br>
-                    <br>
-                    <h3>Postura e Equilíbrio</h3>
+                        <p>A fisioterapia tem papel importante no cuidado de pessoas com Alzheimer, especialmente na preservação da mobilidade e da funcionalidade. O tratamento busca manter a capacidade de realizar movimentos, estimular a coordenação e prevenir complicações decorrentes do sedentarismo, como encurtamentos musculares, dores e perda de independência.</p>
 
-                </div>
-                <div class="card">
-                    <img src="../images/img2.webp" alt="Fisioterapia para autonomia" loading="lazy">
-                    <br>
-                    <br>
-                    <h3>Controle e Destreza</h3>
+                        <p>O Pilates adaptado pode ser utilizado como uma estratégia complementar, promovendo exercícios que estimulam o corpo de forma segura e orientada. Além dos benefícios físicos, essa prática pode contribuir para a percepção corporal, o relaxamento e a manutenção de rotinas motoras, respeitando sempre o estágio da doença e as condições do paciente.</p>
 
-                </div>
-                <div class="card">
-                    <img src="../images/img4.webp" alt="Fisioterapia para reabilitação" loading="lazy">
-                    <br>
-                    <br>
-                    <h3>Mobilidade e Força</h3>
+                        <a href="https://wa.me/5513997879142" class="btn-agendar" aria-label="Agende sua avaliaçao FisioNeurológica pelo WhatsApp" rel="noopener noreferrer">Agende sua consulta</a>
 
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+            <br><br><br><br><br>
+            
 
-        <br><br>
-
-        <section id="depoimentos" class="perguntas-frequentes">
-            <h2>Aqui vai ter resumo da abordagem usada, o diferencial de fisioterapia + pilates e um resumo rápido dos benefícios disso</h2>
         </section>
 
-
-        <section id="depoimentos" class="perguntas-frequentes">
-            <h2>Aqui vão ter uns 4 depoimentos</h2>
-        </section>
-
-    </main>
 
     <div class="floating-wrapper">
-
         <!-- Footer -->
         <footer class="footer" role="contentinfo">
             <div class="container">
@@ -253,31 +212,31 @@
                     <div class="logo">
                         <a href="#inicio">
                             <picture>
-                                <img src="../assets/logo-fisioneurologica.svg" alt="Fisioneurológica - Fisioterapia e Reabilitação Neurológica" class="logo-img">
+                                <img src="/assets/logo-fisioneurologica.svg" alt="Fisioneurológica - Fisioterapia e Reabilitação Neurológica" class="logo-img">
                             </picture>
                         </a>
                     </div>
                     <div class="footer-info">
                         <div class="redes">
-
+                            
                             <a href="/fisioterapeuta.html" aria-label="Acompanhe as novidades da clínica Fisioneurológica no Instagram">
                                 <!-- <img src="/assets/instagram-logo.svg" class="rede-logo"> -->
                                 <p>Sobre nós</p>
                             </a>
-                            <br>
+                            <br>                            
 
                             <a href="https://instagram.com/clinicafisioneurologica" aria-label="Acompanhe as novidades da clínica Fisioneurológica no Instagram">
-                                <img src="../assets/instagram-logo.svg" class="rede-logo">
+                                <img src="/assets/instagram-logo.svg" class="rede-logo">
                                 <p>@clinicafisioneurologica</p>
                             </a>
-
-
+                            
+                            
                             <a href="mailto:contato@fisioneurologica.com" aria-label="Entre em contato com a Fisioneurológica por E-mail">
-                                <img src="../assets/mail-logo.svg" class="rede-logo">
+                                <img src="/assets/mail-logo.svg" class="rede-logo">
                                 <p>contato@fisioneurologica.com</p>
                             </a>
                         </div>
-                        <p>CREFITO3/69013-F</p>
+                        <p>CREFITO-3: 06/89408</p>
                         <br>
                         <p class="copy">&copy; 2026 - Todos os direitos reservados</p>
 
@@ -304,18 +263,15 @@
                     </a></p>
             </div>
         </footer>
+
         <!-- Fim do Footer -->
 
         <button id="floatingBtn" aria-label="Agendar no WhatsApp">
             <a href="https://wa.me/5513997879142" aria-label="Agende sua avaliaçao FisioNeurológica pelo WhatsApp" rel="noopener noreferrer">
-                <img src="../assets/whatsapp-logo-2.svg" alt="" class="btn-float">
+                <img src="/assets/whatsapp-logo-2.svg" alt="" class="btn-float">
             </a>
         </button>
-
-
     </div>
-
-
 
     <div id="info-modal" class="modal hidden">
         <div class="modal-content">
