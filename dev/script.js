@@ -130,8 +130,6 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", updateButtonPosition);
   updateButtonPosition();
 
-  //////////////////////////////////////////////////////////////////////////////
-
   //header com efeito glass
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
@@ -141,7 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
   });
-
 
   // Dropdown da navbar -- do Claude
   const dropdownItem = document.querySelector(".has-dropdown");
@@ -154,6 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
       this.setAttribute("aria-expanded", isOpen);
     });
 
+    // fundo opaco na navbar
+    //document.querySelector(".header").classList.toggle("dropdown-open", isOpen);
+
     document.addEventListener("click", function () {
       dropdownItem.classList.remove("active");
       dropdownToggle.setAttribute("aria-expanded", "false");
@@ -163,5 +163,4 @@ document.addEventListener("DOMContentLoaded", function () {
       e.stopPropagation();
     });
   }
-  //-------------------------------------------------
 });
