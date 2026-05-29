@@ -1430,11 +1430,11 @@ footer a:hover svg {
 /* TELAS MÉDIAS: 769px até 1028px */
 @media (min-width: 769px) and (max-width: 1030px) {
   .logo .logo-default {
-    opacity: 0;
+    opacity: 1;
   }
 
   .logo .logo-scroll {
-    opacity: 1;
+    opacity: 0;
   } 
 
   .logo{
@@ -1494,11 +1494,11 @@ footer a:hover svg {
   }
 
   .logo .logo-default {
-    opacity: 0;
+    opacity: 1;
   }
 
   .logo .logo-scroll {
-    opacity: 1;
+    opacity: 0;
   }  
 
   .nav {
