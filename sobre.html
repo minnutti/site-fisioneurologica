@@ -140,17 +140,34 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="#inicio">
-                    <img src="./assets/logo-fisioneurologica.svg" alt="Fisioneurológica" class="logo-img logo-default" />
-                    <img src="./assets/logo-site-mobile2.svg" alt="Logotipo mobile psicóloga Mariana Borralho" class="logo-img logo-scroll" />
+                <a href="/">
+                    <img src="/assets/logo-fisioneurologica2.svg" alt="Logotipo Fisioneurológica" class="logo-img logo-default" />
+                    <img src="/assets/logo-site-mobile2.svg" alt="Logotipo mobile Fisioneurológica" class="logo-img logo-scroll" />
                 </a>
             </div>
+
             <nav class="nav" role="navigation" aria-label="Menu principal">
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#condicoes-atendidas">Condições Neurológicas Atendidas</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="https://wa.me/5513997879142" aria-label="Agende sua avaliaçao FisioNeurológica" rel="noopener noreferrer" class="btn-contato">Agende sua Avaliação</a></li>
+
+                <ul class="menu">
+
+                    <li class="nav-item"><a href="/">Início</a></li>
+
+                    <li class="nav-item has-dropdown">
+                        <button class="dropdown-toggle" aria-expanded="false">
+                            Especialidades <span class="chevron"></span>
+                        </button>
+                        <div class="dropdown dropdown-menu">
+                            <a href="/especialidades/avc.html">Reabilitação pós-AVC</a>
+                            <a href="/especialidades/parkinson.html">Parkinson</a>
+                            <a href="/especialidades/esclerose-multipla.html">Esclerose Múltipla</a>
+                            <a href="/especialidades/ela.html">ELA</a>
+                            <a href="/especialidades/distrofias.html">Distrofias Musculares</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#depoimentos">Depoimentos</a></li>
+
+                    <li><button href="https://wa.me/5513997879142" aria-label="Agende sua avaliaçao FisioNeurológica" rel="noopener noreferrer" class="btn-contato" data-text="Agende sua Avaliação">Agende sua Avaliação</button></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle">
@@ -160,6 +177,8 @@
             </div>
         </div>
     </header>
+    <!-- Fim do header -->
+
     <main>
 
         <!-- Hero Section -->
