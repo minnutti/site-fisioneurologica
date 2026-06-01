@@ -69,492 +69,498 @@
     </script>
 
     <style>
-
-      /* ══════════════════════════════
+        /* ══════════════════════════════
          SEÇÃO — DIFERENCIAIS
       ══════════════════════════════ */
 
-      .diferenciais {
-        padding: 6rem 20px;
-        background: #fff;
-      }
+        .diferenciais {
+            padding: 6rem 20px;
+            background: #fff;
+        }
 
-      .diferenciais-intro {
-        max-width: 680px;
-        margin: 0 auto 4rem;
-        text-align: center;
-      }
+        .diferenciais-intro {
+            max-width: 680px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
 
-      .diferenciais-intro .section-eyebrow {
-        display: block;
-        font-size: 0.72rem;
-        font-weight: 500;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: var(--color-destaques);
-        opacity: 0.8;
-        margin-bottom: 1rem;
-      }
+        .diferenciais-intro .section-eyebrow {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-destaques);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
 
-      .diferenciais-intro h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-        font-weight: 700;
-        color: var(--color-dark);
-        line-height: 1.2;
-        margin-bottom: 1.25rem;
-      }
+        .diferenciais-intro h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 700;
+            color: var(--color-dark);
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
 
-      .diferenciais-intro h2 em {
-        font-style: italic;
-        color: var(--color-destaques);
-      }
+        .diferenciais-intro h2 em {
+            font-style: italic;
+            color: var(--color-destaques);
+        }
 
-      .diferenciais-intro p {
-        font-size: 1rem;
-        line-height: 1.85;
-        color: var(--color-text);
-        font-weight: 300;
-      }
+        .diferenciais-intro p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--color-text);
+            font-weight: 300;
+        }
 
-      .diferenciais-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        max-width: 1060px;
-        margin: 0 auto;
-      }
+        .diferenciais-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1060px;
+            margin: 0 auto;
+        }
 
-      .diferencial-card {
-        padding: 2rem 1.75rem;
-        border: 1px solid #e8edf2;
-        border-radius: 10px;
-        transition: box-shadow 0.25s ease, transform 0.25s ease;
-      }
+        .diferencial-card {
+            padding: 2rem 1.75rem;
+            border: 1px solid #e8edf2;
+            border-radius: 10px;
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+        }
 
-      .diferencial-card:hover {
-        box-shadow: 0 12px 32px rgba(3, 53, 88, 0.08);
-        transform: translateY(-3px);
-      }
+        .diferencial-card:hover {
+            box-shadow: 0 12px 32px rgba(3, 53, 88, 0.08);
+            transform: translateY(-3px);
+        }
 
-      .diferencial-icon {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 1.25rem;
-        color: var(--color-destaques);
-      }
+        .diferencial-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 1.25rem;
+            color: var(--color-destaques);
+        }
 
-      .diferencial-card h3 {
-        font-family: "Poppins", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--color-dark);
-        margin-bottom: 0.75rem;
-      }
+        .diferencial-card h3 {
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.75rem;
+        }
 
-      .diferencial-card p {
-        font-size: 0.9rem;
-        line-height: 1.75;
-        color: var(--color-text);
-        font-weight: 300;
-      }
+        .diferencial-card p {
+            font-size: 0.9rem;
+            line-height: 1.75;
+            color: var(--color-text);
+            font-weight: 300;
+        }
 
-      /* ══════════════════════════════
+        /* ══════════════════════════════
          SEÇÃO — BENEFÍCIOS
       ══════════════════════════════ */
 
-      .beneficios {
-        padding: 6rem 20px;
-        background: linear-gradient(180deg, #f4f7fb 0%, #fff 100%);
-      }
-
-      .beneficios-wrapper {
-        max-width: 1060px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        align-items: center;
-      }
-
-      .beneficios-texto h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.8rem, 3vw, 2.4rem);
-        font-weight: 700;
-        color: var(--color-dark);
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-      }
-
-      .beneficios-texto h2 em {
-        font-style: italic;
-        color: var(--color-destaques);
-      }
-
-      .beneficios-texto p {
-        font-size: 1rem;
-        line-height: 1.9;
-        color: var(--color-text);
-        font-weight: 300;
-        margin-bottom: 1.25rem;
-      }
-
-      .beneficios-texto .hero-btn {
-        margin-top: 0.5rem;
-        display: inline-flex;
-      }
-
-      .beneficios-lista {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .beneficio-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 1.25rem;
-        padding: 1.25rem 1.5rem;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 16px rgba(3, 53, 88, 0.06);
-        transition: box-shadow 0.2s ease;
-      }
-
-      .beneficio-item:hover {
-        box-shadow: 0 8px 24px rgba(3, 53, 88, 0.1);
-      }
-
-      .beneficio-num {
-        flex-shrink: 0;
-        width: 36px;
-        height: 36px;
-        background: var(--color-dark);
-        color: #fff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Playfair Display", serif;
-        font-size: 0.9rem;
-        font-weight: 700;
-        margin-top: 2px;
-      }
-
-      .beneficio-info strong {
-        display: block;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: var(--color-dark);
-        margin-bottom: 0.25rem;
-      }
-
-      .beneficio-info span {
-        font-family: "Poppins", sans-serif;
-        font-size: 0.85rem;
-        color: var(--color-text);
-        line-height: 1.55;
-        font-weight: 300;
-      }
-
-      /* ══════════════════════════════
-         SEÇÃO — ESPECIALIDADES
-      ══════════════════════════════ */
-
-      .especialidades-home {
-        padding: 6rem 20px;
-        background: #fff;
-      }
-
-      .especialidades-home-intro {
-        max-width: 580px;
-        margin: 0 auto 3.5rem;
-        text-align: center;
-      }
-
-      .especialidades-home-intro h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.8rem, 3.5vw, 2.4rem);
-        font-weight: 700;
-        color: var(--color-dark);
-        margin-bottom: 1rem;
-      }
-
-      .especialidades-home-intro p {
-        font-size: 0.98rem;
-        color: var(--color-text);
-        line-height: 1.8;
-        font-weight: 300;
-      }
-
-      .especialidades-home-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.25rem;
-        max-width: 1060px;
-        margin: 0 auto 3rem;
-      }
-
-      .especialidade-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1.75rem;
-        border: 1px solid #e8edf2;
-        border-radius: 10px;
-        text-decoration: none;
-        transition: all 0.25s ease;
-        gap: 1.25rem;
-      }
-
-      .especialidade-card:hover {
-        border-color: var(--color-destaques);
-        box-shadow: 0 12px 32px rgba(27, 90, 156, 0.1);
-        transform: translateY(-3px);
-      }
-
-      .especialidade-card:hover .esp-card-arrow {
-        transform: translateX(4px);
-        color: var(--color-destaques);
-      }
-
-      .esp-card-nome {
-        font-family: "Poppins", sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--color-dark);
-        margin-bottom: 0.4rem;
-      }
-
-      .esp-card-desc {
-        font-size: 0.85rem;
-        color: var(--color-text);
-        line-height: 1.6;
-        font-weight: 300;
-      }
-
-      .esp-card-footer {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 0.82rem;
-        font-weight: 500;
-        color: var(--color-destaques);
-      }
-
-      .esp-card-arrow {
-        transition: transform 0.2s ease;
-        font-size: 1rem;
-      }
-
-      .especialidades-home-ver-todas {
-        text-align: center;
-      }
-
-      .especialidades-home-ver-todas a {
-        font-family: "Poppins", sans-serif;
-        font-size: 0.9rem;
-        color: var(--color-destaques);
-        text-decoration: none;
-        border-bottom: 1px solid rgba(27, 90, 156, 0.3);
-        padding-bottom: 2px;
-        transition: border-color 0.2s ease;
-      }
-
-      .especialidades-home-ver-todas a:hover {
-        border-color: var(--color-destaques);
-      }
-
-      /* ══════════════════════════════
-         SEÇÃO — ABORDAGEM PILATES+FISIO
-      ══════════════════════════════ */
-
-      .abordagem-home {
-        padding: 6rem 20px;
-        background: var(--color-dark);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .abordagem-home::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        right: -5%;
-        transform: translateY(-50%);
-        width: 45%;
-        height: 120%;
-        background: url('/assets/logo-site-mobile2.svg') no-repeat center;
-        background-size: contain;
-        opacity: 0.04;
-        filter: brightness(0) invert(1);
-        pointer-events: none;
-      }
-
-      .abordagem-home-wrapper {
-        max-width: 860px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-      }
-
-      .abordagem-home .section-eyebrow {
-        display: block;
-        font-size: 0.72rem;
-        font-weight: 500;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: rgba(195, 248, 255, 0.7);
-        margin-bottom: 1.25rem;
-      }
-
-      .abordagem-home h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-        font-weight: 700;
-        color: #fff;
-        line-height: 1.2;
-        margin-bottom: 2rem;
-      }
-
-      .abordagem-home h2 em {
-        font-style: italic;
-        color: #c3f8ff;
-      }
-
-      .abordagem-home-cols {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
-        margin-bottom: 3rem;
-      }
-
-      .abordagem-home-col p {
-        font-size: 0.98rem;
-        line-height: 1.9;
-        color: rgba(255, 255, 255, 0.75);
-        font-weight: 300;
-      }
-
-      .abordagem-home .hero-btn {
-        background: #fff;
-        color: var(--color-dark);
-      }
-
-      .abordagem-home .hero-btn:hover {
-        background: #c3f8ff;
-        color: var(--color-dark);
-      }
-
-      /* ══════════════════════════════
-         SEÇÃO — CTA FINAL
-      ══════════════════════════════ */
-
-      .cta-final {
-        padding: 6rem 20px;
-        background: #fff;
-        text-align: center;
-      }
-
-      .cta-final-wrapper {
-        max-width: 600px;
-        margin: 0 auto;
-      }
-
-      .cta-final h2 {
-        font-family: "Playfair Display", serif;
-        font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-        font-weight: 700;
-        color: var(--color-dark);
-        line-height: 1.2;
-        margin-bottom: 1.25rem;
-      }
-
-      .cta-final h2 em {
-        font-style: italic;
-        color: var(--color-destaques);
-      }
-
-      .cta-final p {
-        font-size: 1rem;
-        line-height: 1.85;
-        color: var(--color-text);
-        font-weight: 300;
-        margin-bottom: 2.5rem;
-      }
-
-      .cta-final-btns {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-
-      .btn-secundario {
-        display: inline-flex;
-        align-items: center;
-        font-family: "Poppins", sans-serif;
-        font-size: 0.95rem;
-        font-weight: 500;
-        color: var(--color-dark);
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border: 1.5px solid var(--color-dark);
-        border-bottom-right-radius: 12px;
-        border-top-left-radius: 12px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
-      }
-
-      .btn-secundario:hover {
-        background: var(--color-dark);
-        color: #fff;
-        transform: translateY(-2px);
-      }
-
-      /* ══════════════════════════════
-         RESPONSIVIDADE
-      ══════════════════════════════ */
-
-      @media (max-width: 900px) {
-        .diferenciais-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
-        .especialidades-home-grid {
-          grid-template-columns: repeat(2, 1fr);
+        .beneficios {
+            padding: 6rem 20px;
+            background: linear-gradient(180deg, #f4f7fb 0%, #fff 100%);
         }
 
         .beneficios-wrapper {
-          grid-template-columns: 1fr;
-          gap: 3rem;
+            max-width: 1060px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
         }
 
-        .abordagem-home-cols {
-          grid-template-columns: 1fr;
-          gap: 1.5rem;
+        .beneficios-texto h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+            font-weight: 700;
+            color: var(--color-dark);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
         }
-      }
 
-      @media (max-width: 600px) {
-        .diferenciais-grid {
-          grid-template-columns: 1fr;
+        .beneficios-texto h2 em {
+            font-style: italic;
+            color: var(--color-destaques);
+        }
+
+        .beneficios-texto p {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: var(--color-text);
+            font-weight: 300;
+            margin-bottom: 1.25rem;
+        }
+
+        .beneficios-texto .hero-btn {
+            margin-top: 0.5rem;
+            display: inline-flex;
+        }
+
+        .beneficios-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .beneficio-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            padding: 1.25rem 1.5rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 16px rgba(3, 53, 88, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .beneficio-item:hover {
+            box-shadow: 0 8px 24px rgba(3, 53, 88, 0.1);
+        }
+
+        .beneficio-num {
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            background: var(--color-dark);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Playfair Display", serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        .beneficio-info strong {
+            display: block;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .beneficio-info span {
+            font-family: "Poppins", sans-serif;
+            font-size: 0.85rem;
+            color: var(--color-text);
+            line-height: 1.55;
+            font-weight: 300;
+        }
+
+        /* ══════════════════════════════
+         SEÇÃO — ESPECIALIDADES
+      ══════════════════════════════ */
+
+        .especialidades-home {
+            padding: 6rem 20px;
+            background: #fff;
+        }
+
+        .especialidades-home-intro {
+            max-width: 580px;
+            margin: 0 auto 3.5rem;
+            text-align: center;
+        }
+
+        .especialidades-home-intro h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 1rem;
+        }
+
+        .especialidades-home-intro p {
+            font-size: 0.98rem;
+            color: var(--color-text);
+            line-height: 1.8;
+            font-weight: 300;
         }
 
         .especialidades-home-grid {
-          grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            max-width: 1060px;
+            margin: 0 auto 3rem;
         }
 
-        .diferenciais,
-        .beneficios,
-        .especialidades-home,
-        .abordagem-home,
+        .especialidade-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1.75rem;
+            border: 1px solid #e8edf2;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            gap: 1.25rem;
+        }
+
+        .especialidade-card:hover {
+            border-color: var(--color-destaques);
+            box-shadow: 0 12px 32px rgba(27, 90, 156, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .especialidade-card:hover .esp-card-arrow {
+            transform: translateX(4px);
+            color: var(--color-destaques);
+        }
+
+        .esp-card-nome {
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin-bottom: 0.4rem;
+        }
+
+        .esp-card-desc {
+            font-size: 0.85rem;
+            color: var(--color-text);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .esp-card-footer {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--color-destaques);
+        }
+
+        .esp-card-arrow {
+            transition: transform 0.2s ease;
+            font-size: 1rem;
+        }
+
+        .especialidades-home-ver-todas {
+            text-align: center;
+        }
+
+        .especialidades-home-ver-todas a {
+            font-family: "Poppins", sans-serif;
+            font-size: 0.9rem;
+            color: var(--color-destaques);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(27, 90, 156, 0.3);
+            padding-bottom: 2px;
+            transition: border-color 0.2s ease;
+        }
+
+        .especialidades-home-ver-todas a:hover {
+            border-color: var(--color-destaques);
+        }
+
+        /* ══════════════════════════════
+         SEÇÃO — ABORDAGEM PILATES+FISIO
+      ══════════════════════════════ */
+
+        .abordagem-home {
+            padding: 6rem 20px;
+            background: var(--color-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .abordagem-home::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: -5%;
+            transform: translateY(-50%);
+            width: 45%;
+            height: 120%;
+            background: url('/assets/logo-site-mobile2.svg') no-repeat center;
+            background-size: contain;
+            opacity: 0.04;
+            filter: brightness(0) invert(1);
+            pointer-events: none;
+        }
+
+        .abordagem-home-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .abordagem-home .section-eyebrow {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(195, 248, 255, 0.7);
+            margin-bottom: 1.25rem;
+        }
+
+        .abordagem-home h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+
+        .abordagem-home h2 em {
+            font-style: italic;
+            color: #c3f8ff;
+        }
+
+        .abordagem-home-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .abordagem-home-col p {
+            font-size: 0.98rem;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 300;
+        }
+
+        .abordagem-home .hero-btn {
+            background: #fff;
+            color: var(--color-dark);
+        }
+
+        .abordagem-home .hero-btn:hover {
+            background: #c3f8ff;
+            color: var(--color-dark);
+        }
+
+        /* ══════════════════════════════
+         SEÇÃO — CTA FINAL
+      ══════════════════════════════ */
+
         .cta-final {
-          padding: 4rem 20px;
+            padding: 6rem 20px;
+            background: #fff;
+            text-align: center;
         }
-      }
 
+        .cta-final-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-final h2 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 700;
+            color: var(--color-dark);
+            line-height: 1.2;
+            margin-bottom: 1.25rem;
+        }
+
+        .cta-final h2 em {
+            font-style: italic;
+            color: var(--color-destaques);
+        }
+
+        .cta-final p {
+            font-size: 1rem;
+            line-height: 1.85;
+            color: var(--color-text);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-final-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-secundario {
+            display: inline-flex;
+            align-items: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border: 1.5px solid var(--color-dark);
+            border-bottom-right-radius: 12px;
+            border-top-left-radius: 12px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-secundario:hover {
+            background: var(--color-dark);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* ══════════════════════════════
+         RESPONSIVIDADE
+      ══════════════════════════════ */
+
+        @media (max-width: 900px) {
+            .diferenciais-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .especialidades-home-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .beneficios-wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .abordagem-home-cols {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .diferenciais-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .especialidades-home-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .abordagem-home::before {
+                transform: translate(10%, -50%);
+                left: -20%;
+                width: 180%;
+                height: 180%;
+
+            }
+
+            .diferenciais,
+            .beneficios,
+            .especialidades-home,
+            .abordagem-home,
+            .cta-final {
+                padding: 4rem 20px;
+            }
+        }
     </style>
 
 </head>
@@ -636,8 +642,8 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/>
-                        <path d="M12 6v6l4 2"/>
+                        <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z" />
+                        <path d="M12 6v6l4 2" />
                     </svg>
                     <h3>Especialização em neurologia</h3>
                     <p>Mais de 20 anos dedicados exclusivamente a condições neurológicas — do diagnóstico ao protocolo de tratamento, com profundidade que a formação geral não oferece.</p>
@@ -645,10 +651,10 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                     </svg>
                     <h3>Atendimento individualizado</h3>
                     <p>Cada paciente tem sua própria história, ritmo e possibilidades. O tratamento é construído para a sua realidade — não para um protocolo padronizado.</p>
@@ -656,7 +662,7 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                     </svg>
                     <h3>Baseado em evidências</h3>
                     <p>Técnicas validadas pela pesquisa científica, incluindo estudos desenvolvidos pela própria profissional em espasticidade e terapia de uso forçado.</p>
@@ -664,9 +670,9 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="12" y1="8" x2="12" y2="16"/>
-                        <line x1="8" y1="12" x2="16" y2="12"/>
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="12" y1="8" x2="12" y2="16" />
+                        <line x1="8" y1="12" x2="16" y2="12" />
                     </svg>
                     <h3>Fisioterapia + Pilates</h3>
                     <p>Integração única entre a fisioterapia neurológica e o método Pilates, potencializando os ganhos de controle motor, equilíbrio e qualidade de movimento.</p>
@@ -674,7 +680,7 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     </svg>
                     <h3>Compromisso com o resultado</h3>
                     <p>O objetivo é sempre o maior nível de independência possível para cada paciente. O progresso é acompanhado de perto e o tratamento ajustado continuamente.</p>
@@ -682,8 +688,8 @@
 
                 <div class="diferencial-card">
                     <svg class="diferencial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                        <circle cx="12" cy="10" r="3"/>
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
                     </svg>
                     <h3>Santos e Baixada Santista</h3>
                     <p>Atendimento presencial em Santos, com estrutura preparada para receber pacientes com diferentes níveis de mobilidade e complexidade clínica.</p>
@@ -927,11 +933,17 @@
             </div>
             <div class="minnutti-logo">
                 <p><a href="https://minnutti.com.br" rel="noopener noreferrer">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 116" style="enable-background:new 0 0 250 116;" xml:space="preserve">
-                        <style type="text/css">.st0{fill:#111111;}</style>
-                        <g><path id="quad_00000121266546110408564300000002702804473989983368_" class="st0" d="M234.01,91.72c-5.28-0.36-7.92-2.88-7.92-7.92V51.16c-0.36-6.6-3.96-9.84-11.04-9.84c-7.08,0-10.68,3.24-10.8,9.84v32.2c0,4.61-3.74,8.35-8.35,8.35h-7.85l0-37.32c0-14.94,12.09-27.06,27.04-27.12c14.66-0.05,23.3,5.75,26.08,17.45V22.58c0-11.59-9.39-20.98-20.98-20.98h-71.96c-11.59,0-20.98,9.39-20.98,20.98v24.94c2.14-13.51,11.06-20.24,26.72-20.24c18.12,0,27,9,26.88,27.12v37.32h-8.16c-5.28-0.36-7.92-2.88-7.92-7.92V51.16c-0.36-6.6-3.96-9.84-11.04-9.84s-10.68,3.24-10.8,9.84v32.2c0,4.61-3.74,8.35-8.35,8.35h-7.32v2.82c0,11.59,9.39,20.98,20.98,20.98h71.96c11.59,0,20.98-9.39,20.98-20.98v-2.82H234.01z"/></g>
-                    </svg>
-                </a></p>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 116" style="enable-background:new 0 0 250 116;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #111111;
+                                }
+                            </style>
+                            <g>
+                                <path id="quad_00000121266546110408564300000002702804473989983368_" class="st0" d="M234.01,91.72c-5.28-0.36-7.92-2.88-7.92-7.92V51.16c-0.36-6.6-3.96-9.84-11.04-9.84c-7.08,0-10.68,3.24-10.8,9.84v32.2c0,4.61-3.74,8.35-8.35,8.35h-7.85l0-37.32c0-14.94,12.09-27.06,27.04-27.12c14.66-0.05,23.3,5.75,26.08,17.45V22.58c0-11.59-9.39-20.98-20.98-20.98h-71.96c-11.59,0-20.98,9.39-20.98,20.98v24.94c2.14-13.51,11.06-20.24,26.72-20.24c18.12,0,27,9,26.88,27.12v37.32h-8.16c-5.28-0.36-7.92-2.88-7.92-7.92V51.16c-0.36-6.6-3.96-9.84-11.04-9.84s-10.68,3.24-10.8,9.84v32.2c0,4.61-3.74,8.35-8.35,8.35h-7.32v2.82c0,11.59,9.39,20.98,20.98,20.98h71.96c11.59,0,20.98-9.39,20.98-20.98v-2.82H234.01z" />
+                            </g>
+                        </svg>
+                    </a></p>
             </div>
         </footer>
         <!-- Fim do Footer -->
