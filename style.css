@@ -14,6 +14,7 @@
   --color-details: #c4c7b2;
   --color-text: #565656;
   --color-light-green: #8FD5A6;
+  --color-light-blue: #c3f8ff;
 
   --filter-bg1: brightness(0) saturate(100%) invert(87%) sepia(2%) saturate(710%) hue-rotate(326deg) brightness(113%) contrast(95%);
   --filter-bg2: brightness(0) saturate(100%) invert(96%) sepia(33%) saturate(389%) hue-rotate(296deg) brightness(104%) contrast(91%);    
@@ -22,6 +23,7 @@
   --filter-text: filter: brightness(0) saturate(100%) invert(31%) sepia(0%) saturate(1250%) hue-rotate(151deg) brightness(101%) contrast(86%);
   --filter-aqua: invert(56%) sepia(73%) saturate(2098%) hue-rotate(157deg) brightness(105%) contrast(109%);
   --filter-light-green: invert(84%) sepia(7%) saturate(1495%) hue-rotate(87deg) brightness(92%) contrast(92%);
+  --filter-light-blue: invert(98%) sepia(78%) saturate(5435%) hue-rotate(171deg) brightness(104%) contrast(112%);
 }
 
 * {
@@ -1365,7 +1367,8 @@ a.btn-agendar {
 }
 
 .rede-logo{
-  filter: var(--filter-light-green);
+  filter: var(--filter-light-blue);
+   
 }
 
 .minnutti-logo {
