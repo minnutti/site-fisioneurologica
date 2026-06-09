@@ -26,6 +26,63 @@
   <meta property="og:image" content="https://fisioneurologica.com.br/assets/fisioneurologica-thumb.png">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!--
+    //////////////////////////////////////////
+    //////////////////////////////////////////
+    -->
+    <!--
+  Cole esses meta tags no <head> de TODAS as páginas do site,
+  logo após os meta tags existentes e antes do </head>.
+
+  Esses tags habilitam:
+  - Ícone na tela inicial do iOS e Android
+  - Modo webapp (sem barra do navegador)
+  - Splash screen no iOS
+  - Tema de cor na barra de status
+-->
+
+    <!-- PWA — Modo webapp -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="FisioNeuro">
+
+    <!-- Cor da barra de status / navegador -->
+    <meta name="theme-color" content="#033558">
+    <meta name="msapplication-TileColor" content="#033558">
+    <meta name="msapplication-TileImage" content="/assets/favicon_512x512.png">
+
+    <!-- Ícones Apple (iOS) — tamanhos para diferentes dispositivos -->
+    <link rel="apple-touch-icon" href="/assets/favicon_180x180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon_180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon_180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_180x180.png">
+
+    <!-- Manifesto PWA (já deve existir no head, confirme que o caminho está correto) -->
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!--
+  SPLASH SCREEN iOS (opcional mas melhora a experiência):
+  O iOS gera a splash automaticamente a partir do apple-touch-icon,
+  mas para splash personalizada por tamanho de tela, adicione:
+-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!--
+  NOTA IMPORTANTE:
+  Para o modo "sem barra do navegador" funcionar no iOS,
+  o usuário precisa adicionar à tela inicial pelo Safari.
+  No Android (Chrome), o navegador vai oferecer a instalação
+  automaticamente se o site tiver um service worker registrado.
+
+  Se quiser o banner de instalação no Android, adicione
+  o script de service worker descrito no arquivo sw-register.js
+-->
+    <!--
+    //////////////////////////////////////////
+    //////////////////////////////////////////
+    -->
+
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="alternate icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="stylesheet" href="/style.css">
@@ -70,22 +127,21 @@
                             Especialidades <span class="chevron"></span>
                         </button>
                         <div class="dropdown dropdown-menu">
-                            <a href="/especialidades/avc.html">Reabilitação pós-AVC</a>
-                            <a href="/especialidades/parkinson.html">Parkinson</a>
-                            <a href="/especialidades/esclerose-multipla.html">Esclerose Múltipla</a>
-                            <a href="/especialidades/ela.html">ELA</a>
-                            <a href="/especialidades/distrofias.html">Distrofias Musculares</a>
-                            <a href="/especialidades/lesao-medular.html">Lesão Medular</a>
+                            <a href="/especialidades/avc">Reabilitação pós-AVC</a>
+                            <a href="/especialidades/parkinson">Parkinson</a>
+                            <a href="/especialidades/esclerose-multipla">Esclerose Múltipla</a>
+                            <a href="/especialidades/ela">ELA</a>
+                            <!-- <a href="/especialidades/distrofias">Distrofias Musculares</a> -->
+                            <a href="/especialidades/lesao-medular">Lesão Medular</a>
+                            <a href="/especialidades/cmt">Charcot-Marie-Tooth</a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a href="/sobre.html">Sobre</a>
+                        <a href="/sobre">Sobre</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="/">Contato</a>
-                    </li>
+                    <li class="nav-item"><a href="/contato">Contato</a></li>
 
           <li>
             <button class="btn-contato" onclick="window.open('https://wa.me/5513997879142','_blank')">
@@ -115,7 +171,7 @@
 
       <div class="esp-lista">
 
-        <a href="/especialidades/avc.html" class="esp-item">
+        <a href="/especialidades/avc" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">Reabilitação pós-AVC</span>
             <span class="esp-item-desc">Recuperação de força, coordenação, marcha e independência após acidente vascular cerebral</span>
@@ -123,7 +179,7 @@
           <span class="esp-arrow">→</span>
         </a>
 
-        <a href="/especialidades/parkinson.html" class="esp-item">
+        <a href="/especialidades/parkinson" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">Doença de Parkinson</span>
             <span class="esp-item-desc">Tratamento do tremor, rigidez, bradicinesia, equilíbrio e prevenção de quedas</span>
@@ -131,7 +187,7 @@
           <span class="esp-arrow">→</span>
         </a>
 
-        <a href="/especialidades/esclerose-multipla.html" class="esp-item">
+        <a href="/especialidades/esclerose-multipla" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">Esclerose Múltipla</span>
             <span class="esp-item-desc">Manejo da fadiga, espasticidade, equilíbrio e funcionalidade em todas as fases da doença</span>
@@ -139,7 +195,7 @@
           <span class="esp-arrow">→</span>
         </a>
 
-        <a href="/especialidades/ela.html" class="esp-item">
+        <a href="/especialidades/ela" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">ELA — Esclerose Lateral Amiotrófica</span>
             <span class="esp-item-desc">Preservação da função motora, mobilidade e qualidade de vida em todas as fases</span>
@@ -147,18 +203,28 @@
           <span class="esp-arrow">→</span>
         </a>
 
-        <a href="/especialidades/distrofias.html" class="esp-item">
+        <!--
+        <a href="/especialidades/distrofias" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">Distrofias Musculares</span>
             <span class="esp-item-desc">Fortalecimento, prevenção de contraturas e manutenção da independência funcional</span>
           </div>
           <span class="esp-arrow">→</span>
         </a>
+        -->
 
-        <a href="/especialidades/lesao-medular.html" class="esp-item">
+        <a href="/especialidades/lesao-medular" class="esp-item">
           <div class="esp-item-info">
             <span class="esp-item-nome">Lesão Medular</span>
             <span class="esp-item-desc">Reabilitação para paraplegia, tetraplegia e paresia — recupere função, mobilidade e independência</span>
+          </div>
+          <span class="esp-arrow">→</span>
+        </a>
+
+        <a href="/especialidades/cmt" class="esp-item">
+          <div class="esp-item-info">
+            <span class="esp-item-nome">Charcot-Marie-Tooth</span>
+            <span class="esp-item-desc">Reabilitação fisioterapêutica para preservar a função e a qualidade de vida</span>
           </div>
           <span class="esp-arrow">→</span>
         </a>
@@ -190,7 +256,7 @@
           </div>
           <div class="footer-info">
             <div class="redes">
-              <a href="/sobre.html">
+              <a href="/sobre">
                 <p>Sobre nós</p>
               </a>
               <br>

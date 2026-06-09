@@ -1,0 +1,31 @@
+{
+  "name": "FisioNeurológica",
+  "short_name": "FisioNeuro",
+  "description": "Fisioterapia neurológica especializada em Santos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#033558",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/favicon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/favicon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/fisioneurologica-thumb-01.png",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}
